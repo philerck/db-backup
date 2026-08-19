@@ -1,0 +1,358 @@
+:root {
+  --main-color: #663399;
+  --second-color: #7d7484;
+  --third-color: #014a7a;
+  --lightgrey: #e6e6e6;
+  --lightergrey: #f9f9fc;
+  --grey: #737373;
+}
+.sidebar-logo {
+  width: 150px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-links p {
+  margin-right: 1rem;
+}
+
+.footer-links p a {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+.sidebar-tree .toctree-l1 > .reference,
+.sidebar-tree .toctree-l1 > label .icon {
+  --color-sidebar-link-text--top-level: var(--main-color);
+  color: var(--color-sidebar-link-text--top-level);
+}
+
+.toc-tree li.scroll-current > .reference {
+  --color-sidebar-link-text--top-level: var(--main-color);
+  color: var(--color-sidebar-link-text--top-level);
+}
+
+.section {
+  margin: 4rem 0 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+h4,
+h5,
+h6 {
+  color: var(--second-color);
+  font-weight: normal;
+}
+
+a {
+  color: var(--main-color);
+}
+
+a:hover {
+  color: #333333;
+}
+
+.related-pages a:hover .page-info .title {
+  color: #333333;
+}
+
+.shooter-text {
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.shooter-text-med {
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+dl dt {
+  font-size: 22px;
+  color: var(--second-color);
+}
+
+strong {
+  color: var(--main-color);
+}
+
+div.color_names_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 100px;
+  gap: 0.2rem;
+}
+
+div.color_names-items p {
+  text-align: center;
+  color: #333;
+}
+
+.table-wrapper table {
+  width: calc(100% - 1rem);
+  margin-left: 0;
+  box-shadow: none;
+}
+
+.table-wrapper table tr.row-odd {
+  background-color: var(--lightergrey);
+}
+
+.table-wrapper table tr.row-odd:first-of-type,
+body[data-theme="dark"] .table-wrapper table tr.row-odd:first-of-type {
+  background-color: transparent;
+}
+
+.table-wrapper table tr th.head {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid var(--second-color);
+  color: var(--second-color);
+  text-align: left;
+}
+
+.table-wrapper table tr td {
+  border: none;
+  padding: 0.5rem 0.25rem;
+  font-size: 0.9rem;
+}
+
+.table-wrapper table tr td .line {
+  margin: 0.5rem 0;
+}
+
+.table-wrapper table tr td:first-of-type {
+  color: var(--second-color);
+  font-weight: bold;
+}
+
+body[data-theme="dark"] .table-wrapper table tr.row-odd {
+  background-color: white;
+}
+
+body[data-theme="auto"] .table-wrapper table tr.row-odd {
+  background-color: white;
+}
+
+blockquote div p {
+  font-size: 20px;
+}
+
+.admonition {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cp_embed_wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+table.docutils td,
+table.docutils th {
+  padding: 0.25rem 0.25rem;
+}
+
+em {
+  color: var(--second-color);
+}
+
+ul li::marker,
+ol li::marker {
+  color: var(--second-color);
+}
+
+.highlight .err {
+  border: inherit;
+  box-sizing: inherit;
+}
+
+.pkey {
+  text-decoration: underline;
+  background-color: #fff2cc;
+}
+
+.fkey {
+  background-color: #e1d5e7;
+}
+
+.shooter-list ol li .line strong,
+.shooter-list ul li .line strong {
+  font-size: 22px;
+}
+
+.shooter-list ol li::marker,
+.shooter-list ul li::marker {
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.cp_embed_wrapper {
+  margin-top: 2rem;
+}
+
+p > strong,
+.line strong {
+  color: var(--second-color);
+}
+
+.table-wrapper tr th {
+  color: #333;
+}
+
+iframe {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  border: 1px solid transparent;
+}
+
+.rel-container {
+  margin: 2rem 0 4rem 0;
+}
+
+.rel-container > p:first-of-type {
+  color: var(--second-color);
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem 0;
+}
+
+img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  img:not(.sidebar-logo){
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+  }
+}
+
+.admonition {
+  font-size: 1rem;
+}
+
+.admonition p.admonition-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.code-block-caption:has(+ .sqlite) {
+  background-color: #add3eb;
+}
+
+.code-block-caption:has(+ .mysql) {
+  background-color: #f2dbba;
+}
+
+.code-block-caption:has(+ .mysql-sqlite) {
+  background-image: linear-gradient(-45deg, #f2dbba 50%, #add3eb 50%);
+}
+
+.sql-result .table-wrapper table {
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.sql-result .table-wrapper table tr:has(td, th, td p) {
+  font-size: 12px;
+  color: #333333;
+}
+
+.sql-result .table-wrapper table tr td {
+  font-size: 12px;
+}
+
+.sql-result .row-odd,
+.sql-result .table-wrapper table tr.row-odd:first-of-type {
+  background-color: #cfcfcf;
+}
+
+.sql-result .row-even {
+  background-color: #f2f2f2;
+}
+
+.sql-result table thead tr th.head {
+  border-bottom: none;
+}
+
+.table-normal table tbody tr td:first-of-type {
+  font-weight: normal;
+  color: #333333;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.sidebar-brand-text {
+  display: none;
+}
+
+/* Normalisierungs Tabellen*/
+
+.norm-table {
+
+  table thead tr th.head {
+    border: 1px solid black;
+    background-color: #e6e6e6;
+  }
+
+  table thead tr th.head p {
+    color: black;
+  }
+
+  table tbody tr, table tbody tr.row-odd {
+    background-color: white;
+  }
+
+  table tr td:first-of-type {
+    font-weight: normal;
+  }
+
+  table tr, table tr td {
+    border: 1px solid black;
+  }
+
+  table tbody tr td p {
+    background-color: white;
+    color: black;
+  }
+
+  table tbody tr td p span.norm-prob {
+    background-color: #add3eb;
+  }
+}
+
